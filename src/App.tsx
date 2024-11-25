@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <>
       <Provider store={store}>
         <div>
-          <h1>Task Managerment</h1>
+          <h1>Task Management</h1>
           <TaskForm />
           <TaskList />
         </div>
