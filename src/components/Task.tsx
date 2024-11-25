@@ -2,6 +2,7 @@ import React from "react";
 import { Task as TaskType } from "../redux/taskTypes";
 import { useDispatch } from "react-redux";
 import { deleteTask, toggleTask } from "../redux/actions";
+import "./Task.css";
 
 interface TaskProps {
   task: TaskType;
@@ -10,7 +11,7 @@ interface TaskProps {
 const Task: React.FC<TaskProps> = ({ task }) => {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className="task">
       <input
         type="checkbox"
         checked={task.completed}

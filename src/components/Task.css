@@ -1,0 +1,18 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task:hover {
+  background-color: #f1f1f1;
+}
+
+.task input[type="checkbox"] {
+  cursor: pointer;
+}

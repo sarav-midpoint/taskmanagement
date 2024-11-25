@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Task } from "../redux/taskTypes";
 import { useDispatch } from "react-redux";
 import { addTask } from "../redux/actions";
-import "./styles.css";
+import "./TaskForm.css";
 
 const TaskForm: React.FunctionComponent = () => {
   const [title, setTitle] = useState("");
@@ -10,7 +10,6 @@ const TaskForm: React.FunctionComponent = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    debugger;
     console.log("Title => ", title);
     if (title) {
       const newTask: Task = {
@@ -24,7 +23,7 @@ const TaskForm: React.FunctionComponent = () => {
   };
 
   return (
-    <div className="container" id="formsub">
+    <div>
       <form action="" onSubmit={handleSubmit}>
         <input
           type="text"

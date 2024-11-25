@@ -17,6 +17,7 @@ A simple Task management applicaiton built with React, redux, Typescipt and basi
 - Redux
 - Typescript
 - Axios
+- css
 
 ### prerequisties
 
